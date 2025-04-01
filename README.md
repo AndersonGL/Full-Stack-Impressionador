@@ -1,7 +1,7 @@
 <<<<<<< HEAD
 * **Full-Stack-Hashtag**
 
- Estudos Front End e BAck end
+ Estudos Front End e Back end
 =======
 # Full-Stack-Hashtag
  Estudos Front End e Back end
