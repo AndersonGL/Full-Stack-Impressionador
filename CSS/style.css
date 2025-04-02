@@ -1,0 +1,29 @@
+/*Tags, IDS e Classes */
+
+/* Comentarios */
+
+h1{
+    color: #ff0000;
+    font-size: 50px;
+}
+
+
+
+ /* Seletor ID somente para um */
+
+#primeiro-paragrafo{
+
+color:green ;
+font-size: 25px;
+
+
+}
+
+/* Seletor Class classifica Varios*/
+
+.segundo-paragrafo {
+
+    color: blue;
+}
+
+
