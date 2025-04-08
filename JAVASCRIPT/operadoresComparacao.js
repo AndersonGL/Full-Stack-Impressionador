@@ -18,4 +18,3 @@ comparacao = senha === senhaDigitada;
 console.log("Aqui é a minha senha: " + comparacao); // false
 
 
-////////////////////////////////////////////////////////////
