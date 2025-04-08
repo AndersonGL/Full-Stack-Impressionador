@@ -16,3 +16,5 @@ let senha = 1234;
 let senhaDigitada = 1234;
 comparacao = senha === senhaDigitada;
 console.log("Aqui é a minha senha: " + comparacao); // false
+
+
