@@ -9,4 +9,8 @@ console.log("10" - 5);  // string é convertida para number
 console.log("3" * "5");  // As duas string é convertida para number
 
 console.log(null == undefined); // true
+ 
+// Convercão explicitas
 
+let numero = 123;
+let string = ( typeof numero); // converte number para string
