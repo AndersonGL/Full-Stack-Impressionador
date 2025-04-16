@@ -49,7 +49,7 @@ console.log(`A quantidade no estoque é suficiente? ${quantidadeSuficiente}`);
 
 // Exercicio 5
 
-// Operadores not e and
+// Operadores and
  
 
 let produtoDisponivel = true;
@@ -59,9 +59,14 @@ let minEstoque = 15;
 let produtoValido = produtoDisponivel >= minEstoque;
 let produtoDisponivelEmEstoque = produtoDisponivel &&
 produtoValido;
-console.log (`O produto está disponivel e tem a quantidade suficiente: ${produtoValido}, E o produto está indisponivel: ${produtoDisponivelEmEstoque}`); 
 
+console.log (`O produto está disponivel e tem a quantidade suficiente: ${produtoValido}`); 
 
+// Operador not
+
+let produtoIndisponivel = !produtoDisponivel;
+
+console.log(`O produto está disponivel: ${produtoIndisponivel}`); // true 
 
 
 
