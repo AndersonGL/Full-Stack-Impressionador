@@ -162,13 +162,12 @@ soma(3,4);
 
 
 
-
-
-
 let total =  function soma (a , b){
   
   return a + b;
 }
 
 console.log(total(3,4));
-
+console.log(total(13,4));
+console.log(total(5,4));
+console.log(total(7,4));
