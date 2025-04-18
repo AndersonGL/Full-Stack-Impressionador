@@ -152,11 +152,23 @@ console.log(retornoDaFuncao );
 
 // MULTIPLOS PARAMETROS
 
+function soma(a , b) {
+  
+  console.log (a + b)
+  
+}
+
+soma(3,4);
 
 
 
 
 
 
+let total =  function soma (a , b){
+  
+  return a + b;
+}
 
+console.log(total(3,4));
 
