@@ -48,4 +48,4 @@ etiqueta e registre na tela a frase: */
 
 
 
-
+//O valor a ser pago é x (sendo x o resultado do acréscimo dos impostos sobre o valor inicial).
