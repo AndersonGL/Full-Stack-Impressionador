@@ -11,7 +11,7 @@ function calcularMedia(nota1,nota2, nota3) {
 
 }
 
-calcularMedia(5,7,6)
+calcularMedia(5,7,6)   // 6
 
 
 
@@ -34,6 +34,16 @@ console.log(media_final) // 5.5
 //Obs: temperatura em Farenheit = (9/5)*( temperatura em Celsius ) + 32
 
 
+function valorTemperaturaCelsius(){
+
+  let temperatura = (9/5)* + 32
+
+console.log(`A temperatura em Farenheit é de ${temperatura}°F`)
+
+}
+
+
+valorTemperaturaCelsius();  // A temperatura em Farenheit é de 57.6°F
 
 
 
