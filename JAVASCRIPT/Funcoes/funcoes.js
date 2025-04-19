@@ -177,6 +177,14 @@ console.log(total(7,4));
 
 // FUNÇÕES DE ALTA ORDEM  //
 
+//Recebem uma ou mais funcoes com argumentos
+
+// Recebem uma funcao como resultado
+
+
+function  aplicarOperacao(x, operacao){
+  return operacao(x);
+}
 
 
 
