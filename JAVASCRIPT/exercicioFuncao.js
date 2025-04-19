@@ -54,8 +54,17 @@ maior do que o que estava presente na etiqueta da prateleira onde o achou. Isso 
 etiqueta não contém o valor do imposto pago sobre o produto, que é calculado no caixa. Esse imposto
 é de 8,875% em cima do valor do produto. Faça uma função que recebe o valor do produto presente na
 etiqueta e registre na tela a frase: */                
-
-
-
-
 //O valor a ser pago é x (sendo x o resultado do acréscimo dos impostos sobre o valor inicial).
+
+
+
+function valorProdutoFinal(valorProduto) {
+
+  let imposto = 0.08875    // valor do imposto 8,875%
+
+  let valor = valorProduto * (1 + imposto)
+
+console.log(`O valor a ser pago é ${valor}`)
+}
+
+valorProdutoFinal(2);
