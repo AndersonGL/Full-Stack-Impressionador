@@ -12,3 +12,40 @@ function calcularMedia(nota1,nota2, nota3) {
 }
 
 calcularMedia(5,7,6)
+
+
+
+//2 - Imagine agora que o aluno do item anterior não atingiu a média mínima pra passar, e por isso está
+//de prova final. Faça uma nova função que calcula a média final desse aluno a partir de 4 notas, as das 3
+//primeiras provas + a nota da prova final. O cálculo deve ser o seguinte:
+
+let média_antes= 6;
+let prova_final = 5;
+
+media_final = (média_antes + prova_final) / 2
+
+console.log(media_final) // 5.5
+
+
+
+//3 - Escreva uma função que recebe do usuário um valor de temperatura em graus Celsius e escreve na
+//tela o texto:
+//a temperatura correspondente em Farenheit é de xºF (sendo x o resultado da conversão.)
+//Obs: temperatura em Farenheit = (9/5)*( temperatura em Celsius ) + 32
+
+
+
+
+
+
+/* 4 - Quando estava passeando em Nova York, Bruno se surpreendeu com uma realidade diferente da
+que conhecia. Ao tentar pagar um produto, ele percebeu que o valor cobrado era sempre um pouco
+maior do que o que estava presente na etiqueta da prateleira onde o achou. Isso acontece porque a
+etiqueta não contém o valor do imposto pago sobre o produto, que é calculado no caixa. Esse imposto
+é de 8,875% em cima do valor do produto. Faça uma função que recebe o valor do produto presente na
+etiqueta e registre na tela a frase: */                
+
+
+
+
+
