@@ -26,3 +26,17 @@ console.log(string.toLowerCase());
 
 console.log(string.slice(0,5));  // conta do zero ao 
 console.log(string.slice(-6));   // conta de traz 
+
+
+
+
+// substring
+
+console.log(string.substring(0,5));  // conta do zero ao 
+console.log(string.substring(-6));   // conta de traz 
+console.log(string.substring(7, 3));   // inverte esse valores
+
+
+
+
+
