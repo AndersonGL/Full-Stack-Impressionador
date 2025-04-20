@@ -45,7 +45,6 @@ function main() {
 
 main(); // Para continuar você prescisa informar o seu nome parra cadastro! Anderson Gouveia voce foi casadtrado com sucesso! Seu saldo é de 940 reais.
 
------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 // Parâmetros e Argumentos
@@ -58,7 +57,7 @@ function soma(numero1, numero2){
 
 
 
-console.log(numero1 + numero 2);
+console.log(numero1 + numero2);
 
 
 
@@ -101,7 +100,6 @@ calcularTotal();
 
 
 
-----------------------------------------------------------------------------------------------------------------
 // RETORNO DE UMA  FUNÇÃO
 
 // Retorno de uma função
