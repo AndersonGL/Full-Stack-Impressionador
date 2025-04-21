@@ -37,6 +37,8 @@ console.log(string.substring(-6));   // conta de traz
 console.log(string.substring(7, 3));   // inverte esse valores
 
 
+// split (delimiter[, limit]);
 
-
-
+let texto = "maça, banana, laranja, uvas";
+let frutas = texto.split(",")
+console.log(frutas);            // ["maça", " banana", " laranja", " uva" 
