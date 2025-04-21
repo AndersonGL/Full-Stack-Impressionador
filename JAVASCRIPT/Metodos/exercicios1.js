@@ -6,7 +6,7 @@
 
 
 let texto = "javascript é divertido";
-let resultado = texto.replace("javascript", "javascript".toupperCase());
+let resultado = texto.replace("javascript", "javascript".toUpperCase());
 console.log(resultado);    // JAVASCRIPT É DIVERTIDO.toUpperCase()
 
 
