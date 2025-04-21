@@ -7,7 +7,7 @@
 
 let texto = "javascript é divertido";
 let resultado = texto.replace("javascript", "javascript".toUpperCase());
-console.log(resultado);    // JAVASCRIPT É DIVERTIDO.toUpperCase()
+console.log(resultado);    // J?AVASCRIT é divertido.
 
 
 //Exercício 2: Dada a string "Aprendendo Javascript", extraia a palavra "Aprendendo" e,
