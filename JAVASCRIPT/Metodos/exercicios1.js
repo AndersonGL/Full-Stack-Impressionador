@@ -15,13 +15,9 @@ console.log(resultado);    // J?AVASCRIT é divertido.
 //Exemplo de Saída: // “ aprendendo”
 
 
-let texto = "Aprendendo JavaScript"
-
-let palavra = texto.split(" ")[0];
-
-
-console.log(palavra.slice(0));
-console.log(palavra.toLowerCase()); //Aprendendo
+let texto = "Aprendendo Javascript"
+let palavra = texto.substring(0,10).toLowerCase();
+console.log(palavra);
                                      // aprendendo javascript
 
 
@@ -32,12 +28,10 @@ console.log(palavra.toLowerCase()); //Aprendendo
 //Exemplo de Saída: // “Aprendendo Javascript”
 
 
-let linguaguem = "Aprendendo Python"
-let resultado = linguaguem.replace("Python","JavaScript")
-console.log(resultado)
-
-
-
+let frase  = "Aprendendo Python";
+let palavraExtrair = frase.slice(11);
+let fraseNova = frase.replace(palavraExtrair,"JavaScript");
+console.log(fraseNova);
 
 
 //Exercício 4: Dada a string 'cadeira, mesa, sofá, armário', divida essa string em um array de
@@ -46,9 +40,12 @@ console.log(resultado)
 
 
 
+let lista = "cadeira, mesa, sofá, armário";
 
+let array = lista.split(", ");
+console.log(array);
 
-let itens = "cadeira", "mesa", "armário", "sofá"; 
-let sala = itens.split(",", 3);
-console.log(sala)
+array.splice(array.indexOf("sofá"), 1);
+console.log(array);
+
 
