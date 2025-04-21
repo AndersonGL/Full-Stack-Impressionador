@@ -42,3 +42,16 @@ console.log(string.substring(7, 3));   // inverte esse valores
 let texto = "maça, banana, laranja, uvas";
 let frutas = texto.split(",")
 console.log(frutas);            // ["maça", " banana", " laranja", " uva" 
+
+
+let texto = "maça, banana, laranja, uva s";
+let frutas = texto.split(",",3)     //["maça", " banana", " laranja"]
+
+console.log(frutas)
+
+
+
+//  splice (indice, numeroDeItensRemover, item1...)
+
+frutas.splice(3);
+console.log(frutas);
