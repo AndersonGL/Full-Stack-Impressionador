@@ -49,8 +49,6 @@ console.log(resultado)
 
 
 
-
-
 let itens = "cadeira", "mesa", "armário", "sofá"; 
 let sala = itens.split(",", 3);
 console.log(sala)
