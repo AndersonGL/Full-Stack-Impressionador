@@ -55,3 +55,23 @@ console.log(frutas)
 
 frutas.splice(3);
 console.log(frutas);
+
+
+// ARRAYS
+
+
+let frutas = ["maçã","uva","laranja"]
+
+console.log(frutas.indexOf("laranja"));
+//podendo adicionar tambem numeros
+console.log(frutas.slice(0,1)); //inicio na quantidade dos elementos
+
+console.log(frutas.slice(0,1,10)); //substituir o elemento  inicio na quantidade dos elementos
+console.log(frutas) //[ 'maçã', 'uva'
+
+
+// ARRAYS
+
+
+
+
