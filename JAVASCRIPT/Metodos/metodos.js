@@ -43,7 +43,7 @@ console.log(frutas1);
 frutas.splice(3);
 console.log(frutas);
 
-<<<<<<< HEAD
+
 // ARRAYS
 
 let produtos = ["Carrinho", "Boneca", "Bola"];
