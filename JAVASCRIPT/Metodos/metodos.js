@@ -43,6 +43,7 @@ console.log(frutas1);
 frutas.splice(3);
 console.log(frutas);
 
+<<<<<<< HEAD
 // ARRAYS
 
 let produtos = ["Carrinho", "Boneca", "Bola"];
@@ -85,5 +86,55 @@ console.log(numeros); // [8, 6, 5, 4, 3, 2, 19, 10, 1]
 
 let mesclaArrays = letras.concat(numeros); // ["h", "g", 
 // "e", "d", "c", "b", "a", 8, 6, 5, 4, 3, 2, 19, 10, 1]
+
+
+ // ARRAYS indexOf, slice, splice, unshift, push, pop, shift
+
+
+let frutas10 = ["maçã","uva","laranja"]
+
+console.log(frutas.indexOf("laranja"));
+//podendo adicionar tambem numeros
+console.log(frutas.slice(0,1)); //inicio na quantidade dos elementos
+
+console.log(frutas.slice(0,1,10)); //substituir o elemento  inicio na quantidade dos elementos
+console.log(frutas) //[ 'maçã', 'uva'
+
+
+// ARRAYS Includes 
+
+let frutas11 = ["maçã","uva","laranja"]
+
+console.log(frutas11.includes("laranja")); //true
+console.log(frutas11.includes(50)); //false
+
+
+
+// ARRAYS every e some
+// every verifica se todos os elementos atendem a condição
+
+
+
+
+console.log(frutas11.every(
+
+  function (frutas11) {
+    return frutas11.includes("u");
+
+  }
+))
+console.log(frutas11.some(
+
+  function (frutas11) {
+    return frutas11.includes("m");
+
+  }
+))
+
+// join
+
+let frutas12 = ["maçã","uva","laranja"]
+
+console.log(frutas12.join(" - ")); //maçã - uva - laranja
 
 
