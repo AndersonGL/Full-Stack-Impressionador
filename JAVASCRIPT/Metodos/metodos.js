@@ -152,3 +152,94 @@ const produto = {
 Object.keys(produto); // retorna as chaves do objeto
 // ["nome", "preco", "diaponibidade"]
 
+
+
+// Metodos Nativos
+
+const pessoa1 = {
+  cidade: "Rio de Janeiro",
+  surf: true,
+
+  falar: function() {console.log("Olá")}
+
+}
+
+const carro = {
+
+  modelo : "Corolla",
+  marca : "Toyota",
+
+
+}
+
+const joao = Object.create(pessoa1); //  Herdar de um objeto
+Object.assign(joao, carro)          // Copiar as propiriedades
+joao.falar();
+console.log(joao.cidade, joao.surf);
+joao.nome = "João";  // Propriedade Nome
+joao.idade = 30;     // Propriedade Idade
+
+console.log(joao);
+
+
+console.log(joao.hasOwnProperty("marca"))  // true
+
+console.log(joao.hasOwnProperty("surf"))  // false
+
+
+
+// Objetos Personalizados 
+
+const calculadora = {
+
+
+valor1: 0,
+valor2: 0,
+
+definirValores :  function (v1, v2 ) {
+
+  calculadora.valor1 = v1;
+  
+  calculadora.valor2= v2;
+},
+
+somar: function()  { 
+   return calculadora.valor1 + calculadora.valor2;
+},
+
+
+subtrair: function()  { 
+  return calculadora.valor1 - calculadora.valor2;
+},
+
+
+multiplicar: function()  { 
+  return calculadora.valor1 * calculadora.valor2;
+},
+
+
+
+dividir: function()  { 
+  return calculadora.valor1 / calculadora.valor2;
+},
+
+}
+
+//exemplo de uso
+
+calculadora.definirValores(20, 5);
+console.log(calculadora.somar());
+console.log(calculadora.subtrair());
+console.log(calculadora.multiplicar());
+console.log(calculadora.dividir());
+
+calculadora.exponenciacao = function () {
+
+  return this.valor1 ** this.valor2;
+};
+
+console.log(calculadora.exponenciacao());
+
+ 
+
+
