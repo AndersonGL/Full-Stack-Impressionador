@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo-Elementos</title>
+  </head>
+  <body>
+    <style>
+
+        p::after { 
+
+             content: 'texto que vai entrar no final';  /* Adiconando texto no final do texto com o after */ 
+
+        }
+
+        p::before {
+
+            content: 'Texto entra no inicio  do texto';
+
+            /* Adiconando texto no inicio do texto com o before */ 
+
+
+        }
+
+      p::first-letter {   /* Entra na Primeira Letra   */
+
+        font-size: 60px;
+        font-weight: 70px;
+      }
+
+      p::first-line {       /* Entra na primeira Linha   */
+
+        color: red;
+      }
+
+    </style>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus,
+      veritatis illum totam culpa optio impedit amet debitis iste asperiores
+      commodi alias sunt ipsam corporis modi sit quis ut voluptatem cum.
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. At animi voluptatibus doloribus dolores commodi molestiae magni explicabo voluptatem, exercitationem eveniet recusandae ratione architecto? Accusamus dicta facere non cupiditate quis voluptatem.
+    </p>
+  </body>
+</html>
