@@ -39,6 +39,8 @@ console.log("Servidor rodando na porta 3000....")
 
 //cd "Full-Stack-Hashtag"  retornar para pasta origem sempre lembrar de colocar a pasta 
 
+// limparo terminal de completo CTRL + L , ou somente subir Comando cls ou clear.
+
 
 // CLI AULA 5
 
