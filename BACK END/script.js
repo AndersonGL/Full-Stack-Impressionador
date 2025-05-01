@@ -25,3 +25,22 @@ server.listen(3000, () => {
 console.log("Servidor rodando na porta 3000....")
 
 });
+
+
+// node script.js
+
+// npm init iniciar um servidor
+
+// npm i  instalar modulos do node
+
+// npm install -g instala o pacote  globalmente
+
+// cd .. voltar uma pasta
+
+//cd "Full-Stack-Hashtag"  retornar para pasta origem sempre lembrar de colocar a pasta 
+
+
+// CLI AULA 5
+
+
+
