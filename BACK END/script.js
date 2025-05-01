@@ -27,7 +27,7 @@ console.log("Servidor rodando na porta 3000....")
 });
 
 
-// node script.js
+// node ./script.js
 
 // npm init iniciar um servidor
 
@@ -41,6 +41,9 @@ console.log("Servidor rodando na porta 3000....")
 
 
 // CLI AULA 5
+
+
+// NPM 
 
 
 
