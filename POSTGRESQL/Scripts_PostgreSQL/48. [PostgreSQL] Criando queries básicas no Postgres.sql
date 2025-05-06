@@ -28,6 +28,7 @@ FROM products;
 -- Comentários no PostgreSQL
 
 -- Este é um comentário de 1 linha
+
 SELECT * FROM orders;
 
 /*
@@ -47,8 +48,6 @@ SELECT * FROM products
 
 
 
-
-
 -- Aula 3:
 -- ALIAS: Renomeando colunas e tabelas com o AS
 
@@ -57,8 +56,6 @@ SELECT
     p.product_name AS Nome_Produto, 
     p.unit_price AS Preco_Unitario
 FROM products AS p;
-
-
 
 
 
@@ -74,15 +71,15 @@ SELECT * FROM orders LIMIT 10;
 
 
 
-
-
-
 -- Aula 5: 
 -- DISTINCT: Selecionar os valores distintos de uma coluna
 
 -- 1. Selecione a tabela customers
 
 -- 2. Faça uma consulta que retorne as profissões (contact_title) distintas da tabela customers
+
+
+
 
  SELECT DISTINCT
     contact_title
