@@ -22,3 +22,7 @@ console.log(inteiro.toPrecision(1)); // Onumero 42 é arredondado e exibido em n
 //(ou seja , 4 vexes 10 elevado a 1,  que é 40)
 console.log(inteiro.toPrecision(2)); // 42
 console.log(inteiro.toPrecision(3)); // 42.0
+
+
+
+// teste
