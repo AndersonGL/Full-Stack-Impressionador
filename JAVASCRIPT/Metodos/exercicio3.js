@@ -3,14 +3,49 @@
 //valor total da venda, considerando o desconto. Adicione também um método chamado
 //detalharVenda que retorne uma string detalhando a venda.
 
+const vendas={
+produto: "TV",
+quantidade: 2,
+precoUnitario: 1500,
+desconto: 0,  // 10%
+
+calcularTotal: function() {
+
+const total = this.quantidade * this.precoUnitario; //3000
+return total - (total * (this.desconto / 100));   // 3000 - (3000 * (10 / 100)) 
+;
 
 
+ },
+
+
+detalharVenda: function() {
+
+ return ` Produto: ${this.produto},
+ Quantidade: ${this.quantidade},
+ Preço Unitário ${this.precoUnitario},
+ Total com desconto: ${this.calcularTotal()}`
+
+
+ }
+
+}
+
+console.log(vendas.detalharVenda());
+
+ console.log(vendas.calcularTotal()); // teste 
 
 //Exercício 2: Adicione um método ao objeto Venda chamado aplicarDesconto que recebe
 //um valor percentual e atualiza o desconto da venda. //Aplique um desconto de 10% e verifique o
 //valor total com o método calcularTotal.
 
+vendas.aplicarDesconto = function(percentual) {
+    this.desconto = percentual;
+ 
+}
 
+//vendas.aplicarDesconto(10);
+console.log(`O deconto foi de: ${vendas.desconto}%, a Venda ${vendas.detalharVenda()}`);
 
 
 
@@ -18,7 +53,13 @@
 //recebe um número e altera a quantidade do produto na venda. Atualize a quantidade e
 //verifique o total da venda após a atualização.
 
+vendas.atualizarQuantidade = function(novaQuantidade){
+  this.quantidade = novaQuantidade;
+}
 
+// vendas.atualizarQuantidade(3);
+// vendas.aplicarDesconto(10);
+// console.log(`A quantidade foi de: ${vendas.quantidade}, a Venda: ${vendas.detalharVenda()}`);
 
 
 
@@ -26,8 +67,13 @@
 //disponível em estoque e retorna uma mensagem fixa indicando se a venda pode ser realizada
 //ou se é necessário ajustar a quantidade.
 
+vendas.verificarEstoque() = function(estoqueDisponivel){
+    return "Verificação concluída: " + (this.quantidade <= estoqueDisponivel)
+}
 
+console.log(vendas.verificarEstoque(2));
 
+console.log(vendas);
 
 
 //Exercício 5: Retorne um array com todas as suas propriedades e valores do objeto Venda.
