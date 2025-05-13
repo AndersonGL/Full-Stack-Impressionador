@@ -25,4 +25,3 @@ console.log(inteiro.toPrecision(3)); // 42.0
 
 
 
-// teste

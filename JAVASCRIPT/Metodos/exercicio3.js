@@ -31,9 +31,9 @@ detalharVenda: function() {
 
 }
 
-console.log(vendas.detalharVenda());
+//console.log(vendas.detalharVenda());
 
- console.log(vendas.calcularTotal()); // teste 
+ //console.log(vendas.calcularTotal()); // teste 
 
 //Exercício 2: Adicione um método ao objeto Venda chamado aplicarDesconto que recebe
 //um valor percentual e atualiza o desconto da venda. //Aplique um desconto de 10% e verifique o
@@ -45,7 +45,7 @@ vendas.aplicarDesconto = function(percentual) {
 }
 
 //vendas.aplicarDesconto(10);
-console.log(`O deconto foi de: ${vendas.desconto}%, a Venda ${vendas.detalharVenda()}`);
+//console.log(`O deconto foi de: ${vendas.desconto}%, a Venda ${vendas.detalharVenda()}`);
 
 
 
@@ -68,61 +68,86 @@ vendas.atualizarQuantidade = function(novaQuantidade){
 //ou se é necessário ajustar a quantidade.
 
 vendas.verificarEstoque() = function(estoqueDisponivel){
-    return "Verificação concluída: " + (this.quantidade <= estoqueDisponivel)
+   // return "Verificação concluída: " + (this.quantidade <= estoqueDisponivel)
 }
 
-console.log(vendas.verificarEstoque(2));
+//console.log(vendas.verificarEstoque(2));
 
-console.log(vendas);
+//console.log(vendas);
 
 
 //Exercício 5: Retorne um array com todas as suas propriedades e valores do objeto Venda.
 //Exiba as propriedades e valores em um formato legível.
 
-
+const entradas = Object.entries(vendas)
+console.log(entradas);
 
 
 //Exercício 6: Obtenha um array com os nomes de todas as propriedades do objeto Venda.
 //Exiba as propriedades do objeto.
 
-
-
-
+const chaves = Object.keys(vendas);
+console.log(chaves);
 
 //Exercício 7: Obtenha um array com todos os valores das propriedades do objeto Venda.
 //Exiba os valores das propriedades.
 
-
+const valores = Object.values(vendas);
+console.log(valores);
 
 
 //Exercício 8: Verifique se o objeto Venda possui a propriedade desconto. Retorne a
 //verificação diretamente em uma mensagem fixa.
 
+function verificarPropriedadeDesconto() {
+  return "Verificação concluida" + vendas.hasOwnProperty("desconto");
+}
 
-
+console.log(verificarPropriedadeDesconto());
 
 //Exercício 9: Crie um novo objeto NovaVenda que contenha as mesmas propriedades e
 //valores de Venda, mas com um produto e quantidade diferentes. Exiba o novo objeto
 //NovaVenda.
 
+const novaVenda = Object.assign({}, vendas ,{
+ 
+  produto: "Notebook",
+  quantidade: 1,
+});
 
-
-
-
+console.log(novavenda);
 
 //Exercício 10: Adicione uma nova propriedade data ao objeto Venda, definindo-a como não
 //enumerável. Exiba todas as propriedades do objeto Venda e, em seguida, exiba o valor da
 //nova propriedade data separadamente.
 
+Object.defineProperties(vendas, "data", {
 
+value: "2024-08-03",
+Enumerator: false,
 
+});
+
+console.log(Obbject.keys(vendas));
 
 
 //Exercício 11: Crie um novo objeto DescontoEspecial que herde as propriedades do objeto
 //Venda, mas com um desconto fixo de 20%. Exiba as propriedades do novo objeto e verifique
 //se o desconto foi aplicado corretamente.
 
+const descontoEscpecial = Object.create(vendas);
+descontoEscpecial.deconto = 20;
+console.log(descontoEscpecial.detalharVenda());
 
 
 //Exercício 12: Remova a propriedade desconto do objeto Venda. Verifique se a propriedade
 //foi removida com sucesso e exiba as propriedades restantes do objeto.
+
+
+delete vendas.deconto;
+
+console.log(Object.keys(vendas));
+
+delete vendas.aplicarDesconto;
+
+console.log(Object.keys(vendas));
