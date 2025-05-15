@@ -3,7 +3,8 @@ Estudos Front End e Back end
   
 **HTML**,
 **CSS**,
-**JAVA SCRIPT**,
+**JAVASCRIPT**,
+**REACT**
 **NODE**,
 **EXPRESS**,
 **POSTGRESQL**.
