@@ -6,3 +6,4 @@ Estudos Front End e Back end
 **JAVA SCRIPT**
 **NODE**
 **EXPRESS**
+**POSTGRESQL**
