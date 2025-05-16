@@ -1,8 +1,10 @@
-Full-Stack-Hashtag
-Estudos Front End e Back end
+## Full-Stack-Hashtag
+## Estudos Front End e Back end 
   
-**HTML**
-**CSS**
-**JAVA SCRIPT**
-**NODE**
-**EXPRESS**
+**HTML**,
+**CSS**,
+**JAVASCRIPT**,
+**REACT**,
+**NODE**,
+**EXPRESS**,
+**POSTGRESQL**.
