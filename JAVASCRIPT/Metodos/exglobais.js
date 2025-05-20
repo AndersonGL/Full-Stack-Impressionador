@@ -69,10 +69,25 @@ function calcularDiferençaEmDias(dataInicial, dataFinal) {
 }
 
 calcularDiferençaEmDias("2024-01-01", "2024-10-08");
+
 // Exercício 5: Crie uma função que receba uma data e extraia o ano, mês e dia dessa data.
 // Exiba as informações no console.
 // Exemplo Entrada: // 2024-10-07
 // Exemplo Saída: // Ano: 2024, Mês: 10, Dia: 6
+
+function extrairParteData(dataString) {
+  let data = new Date(dataString);
+  let ano = data.getFullYear();
+  let mes = data.getMonth() + 1; // 0 a 11
+  let dia = data.getDate();
+
+  console.log("Ano:", ano);
+  console.log("Mes", mes);
+  console.log("Dia", dia);
+}
+
+//extrairParteData("2025-05-20"); //// fica com a data de ontem
+extrairParteData("2025-05-20T00:00:00"); // atualiza a data
 
 // Exercício 6: Crie uma função que receba a data de nascimento de uma pessoa e calcule sua
 // idade com base na data atual. Exiba a idade no console.
@@ -82,3 +97,112 @@ calcularDiferençaEmDias("2024-01-01", "2024-10-08");
 // Exiba o resultado no console.
 // Exemplo Entrada: // 2024-10-07
 // Exemplo Saída: // Data formatada no padrão brasileiro: 07/10/2024
+
+function extrairPartesData(dataString) {
+  let data = new Date(dataString);
+  let ano = data.getFullYear();
+  let mes = data.getMonth() + 1; // indices 0 -11
+  let dia = data.getDate();
+
+  console.log("Ano: ", ano);
+  console.log("Mês: ", mes);
+  console.log("Dia: ", dia);
+}
+
+// extrairPartesData("2024-10-07");
+
+extrairPartesData("2024-10-07T00:00:00");
+
+// Exercício 6: Crie uma função que receba a data de nascimento de uma pessoa e calcule sua
+// idade com base na data atual. Exiba a idade no console.
+let dataNascimento = "1990-12-15";
+// Idade: 34
+
+function calcularIdade(dataNascimento) {
+  let nascimento = new Date(dataNascimento);
+  let hoje = new Date(); // data atual
+
+  //Calcular idade com base pela diferença de anos
+  let idade = hoje.getFullYear() - nascimento.getFullYear(); // 2024 - 1990 = 34
+
+  // Criar a data do aniversário atual ano
+  let aniversarioAtual = new Date(
+    hoje.getFullYear(),
+    nascimento.getMonth(),
+    nascimento.getDate()
+  ); //ANO-MES-DIA
+  // Calcula diferença em millissegundos e converter em dias
+  let diferencaDias = (hoje - aniversarioAtual) / (1000 * 60 * 60 * 24);
+
+  //Ajuste de idade
+  let ajuste = (diferencaDias < 0) * 1; // booleano (transformado em numero)
+  //   console.log(ajuste);
+
+  idade = idade - ajuste; // 34 - 0; = 34 anos
+  // não fez anivsersario esse ano = 34 - 1 = 33;
+  console.log("Minha idade é: ", idade);
+}
+
+calcularIdade(dataNascimento);
+
+// console.log(1000 * 60 * 60 * 24); // 86400000 millissegundos que 1 dia possui
+// timestamp(millissegundos) / millissegundos por dia
+
+// console.log(1000 * 60 * 60 * 24); // 86400000 millissegundos que 1 dia possui
+// timestamp(millissegundos) / millissegundos por dia
+
+// Desafio: Crie uma função que receba uma data e a formate no padrão brasileiro (dia/mês/ano).
+// Exiba o resultado no console.
+
+// 2024-10-07 - UTC
+// Data formatada no padrão brasileiro: 07/10/2024 - UTC 3
+
+function formatarPadraoBrasileiro(dataString) {
+  //Divide a string da data
+  let data = new Date(dataString + "T00:00:00");
+  let dia = data.getDate();
+  let mes = data.getMonth() + 1;
+  let ano = data.getFullYear();
+
+  const dataFormata = `${dia}/${mes}/${ano}`;
+  console.log(`Essa data é formatada: ${dataFormata}`);
+}
+
+// formatarPadraoBrasileiro("2024-10-07T00:00:00");
+
+let data1 = "2024-10-07";
+let data2 = "2023-08-22";
+let data3 = "2024-01-13";
+
+//DINÂMICA
+formatarPadraoBrasileiro(data1);
+formatarPadraoBrasileiro(data2);
+formatarPadraoBrasileiro(data3);
+
+function formatarPadraoMetodoNumber(dataString) {
+  //Dividir a string data
+  let partesDaData = dataString.split("-");
+  //   console.log(partesDaData);
+
+  //Converter para number
+  let ano = parseInt(partesDaData[0]);
+  let mes = parseInt(partesDaData[1]);
+  let dia = parseInt(partesDaData[2]);
+
+  let dataFormata = `${dia}/${mes}/${ano}`; // não é uma Data - O TIPO DADO - não está vindo do Objeto Date.
+  console.log(dataFormata + " Por métodos de number e string.");
+  //   console.log(dataFormata.getDate());
+}
+
+// formatarPadraoMetodoNumber(data1);
+
+function formatarPadraoBrasileiroDate(dataString) {
+  let data = new Date(dataString + "T00:00:00");
+
+  let dataFormatada = data.toLocaleDateString("pt-BR");
+  console.log("Data formatada no padrão brasileiro: " + dataFormatada);
+}
+
+formatarPadraoBrasileiroDate(data1);
+formatarPadraoBrasileiroDate(data2);
+formatarPadraoBrasileiroDate(data3);
