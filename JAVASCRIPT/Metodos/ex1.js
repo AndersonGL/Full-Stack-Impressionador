@@ -9,7 +9,7 @@ console.log(resultado); // J?AVASCRIT é divertido.
 
 //Exercício 2: Dada a string "Aprendendo Javascript", extraia a palavra "Aprendendo" e,
 //em seguida, converta essa palavra para letras minúsculas.
-//Exemplo de Saída: // “ aprendendo”
+//Exemplo de Saída: // “ aprendendo”sss
 
 texto = "Aprendendo Javascript";
 let palavra = texto.substring(0, 10).toLowerCase();

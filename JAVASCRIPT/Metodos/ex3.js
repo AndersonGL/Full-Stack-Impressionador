@@ -29,7 +29,7 @@ detalharVenda: function() {
 
  }
 
-}
+}sssss
 
 //console.log(vendas.detalharVenda());
 
