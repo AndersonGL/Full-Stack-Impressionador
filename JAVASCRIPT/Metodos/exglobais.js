@@ -170,11 +170,12 @@ function formatarPadraoBrasileiro(dataString) {
 
 // formatarPadraoBrasileiro("2024-10-07T00:00:00");
 
-let data1 = "2024-10-07";
+//let data1 = "1987-08-07";
 let data2 = "2023-08-22";
 let data3 = "2024-01-13";
 
 //DINÂMICA
+
 formatarPadraoBrasileiro(data1);
 formatarPadraoBrasileiro(data2);
 formatarPadraoBrasileiro(data3);
@@ -206,3 +207,16 @@ function formatarPadraoBrasileiroDate(dataString) {
 formatarPadraoBrasileiroDate(data1);
 formatarPadraoBrasileiroDate(data2);
 formatarPadraoBrasileiroDate(data3);
+
+// testado conversão para o formato barsileiro
+
+let data1 = "1987-08-07";
+
+function formatarPadraoBrasileiroDate(dataString) {
+  let data = new Date(dataString + "T00:00:00");
+
+  let dataFormatada = data.toLocaleDateString("pt-BR");
+  console.log("Data formatada no padrão brasileiro: " + dataFormatada);
+}
+
+formatarPadraoBrasileiroDate(data1); // 07/08/1987
