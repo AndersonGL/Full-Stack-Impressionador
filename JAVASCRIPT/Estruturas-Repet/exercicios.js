@@ -4,6 +4,7 @@
 // é aplicado. O programa deve imprimir mensagens que retornem o se o cliente possui ou não o direito de
 // retorno e o valor da compra no console.
 
+
 function verificarDesconto(valorDaCompra) {
     if (valorDaCompra >= 100) {
         console.log("Parabéns! Você tem o direito a um desconto de 10%");
