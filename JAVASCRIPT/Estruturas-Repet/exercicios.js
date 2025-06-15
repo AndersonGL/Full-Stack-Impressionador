@@ -55,6 +55,29 @@ function verificarEstoque(estoqueDisponivel) {
 
 
 
+function categoriaCliente(){
+   const pontuacaoFidelidade = Math.floor(Math.random() * 101);
+    
+   console.log(` Sua pontuação de fidelidade é: ${pontuacaoFidelidade}`);
+
+
+   if(pontuacaoFidelidade>= 85) {
+     
+   console.log("Cliente Premium")
+
+   }else if(pontuacaoFidelidade >= 50) {
+
+   console.log("Cliente Regular");
+
+   }else{
+
+    console.log("Cliente Comum");
+
+   }
+}
+
+categoriaCliente();
+
 
 
 
@@ -70,8 +93,33 @@ function verificarEstoque(estoqueDisponivel) {
 // vendedor com base nas vendas mensais e na meta de vendas estabelecida.
 // OPERADOR TERNÁRIO:
 
+function desepenhoIndividualDeVendas(vendasMensais, metasDeVendas) {
+  const percentualAlcancado = (vendasMensais / metasDeVendas) * 100;
 
+  if (percentualAlcancado >= 100) {
+   return "Excelente Desempenho";
+  }else if (percentualAlcancado>= 90 && percentualAlcancado < 100){
+   return "Muito Bom Desempenho";
+  }else if (percentualAlcancado >= 80 && percentualAlcancado < 90) {
+   return "Bom Desempenho";
+  }else if (percentualAlcancado >= 61 && percentualAlcancado <80){
+   return "Desempenho Satisfat´rio";
+  }else {
+   return "Desepenho Insatisfatorio";
 
+  }
+}
+
+const vendasMensais = 7500;
+const metaVendas = 1000;
+
+cosnt categoriaDEsempenho = desempenhoIndividualDeVendas{
+
+   vendasMensais,
+   metaVendas
+};
+
+console.log(`Categoria de Desempenho: ${categoriaDesempenho}`);
 
 
 // Exercício 5: Verificação de Velocidade
