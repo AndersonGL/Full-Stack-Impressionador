@@ -116,19 +116,15 @@ console.log(`O veículo está dentro do limite de velocidade: ${dentroDoLimite}`
 // Crie uma função mensagemSemaforo que recebe uma cor de semáforo como argumento (por exemplo,
 // "vermelho", "amarelo" ou "verde") e retorna uma mensagem indicando a ação a ser tomada com base na cor
 // do semáforo. Utilize o operador ternário para determinar a mensagem.
-// SWITCH / CASE:
 
 function mensagemSemaforo(cor) {
-  switch (cor) {
-    case "vermelho":
-      return "Pare!";
-    case "amarelo":
-      return "Atenção! Prepare-se para parar.";
-    case "verde":
-      return "Siga em frente!";
-    default:
-      return "Cor inválida!";
-  }
+  return cor === "vermelho"
+    ? "Pare!"
+    : cor === "amarelo"
+    ? "Atenção! Prepare-se para parar."
+    : cor === "verde"
+    ? "Siga em frente!"
+    : "Cor inválida!";
 }
 const corSemaforo = "verde";
 const mensagem = mensagemSemaforo(corSemaforo);
