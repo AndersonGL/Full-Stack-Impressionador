@@ -4,24 +4,19 @@
 // é aplicado. O programa deve imprimir mensagens que retornem o se o cliente possui ou não o direito de
 // retorno e o valor da compra no console.
 
-
 function verificarDesconto(valorDaCompra) {
-    if (valorDaCompra >= 100) {
-        console.log("Parabéns! Você tem o direito a um desconto de 10%");
-        const valorComDesconto = valorDaCompra = 0.9;
-         console.log(`Valor da Compra R$${valorComDesconto}`)
-    }else{
-
- console.log("Desculpe, mas você não tem direito ao desconto")
- console.log(`Valor da Compra R$${valorCompra}`)
-
-    }
+  if (valorDaCompra >= 100) {
+    console.log("Parabéns! Você tem o direito a um desconto de 10%");
+    const valorComDesconto = (valorDaCompra = 0.9);
+    console.log(`Valor da Compra R$${valorComDesconto}`);
+  } else {
+    console.log("Desculpe, mas você não tem direito ao desconto");
+    console.log(`Valor da Compra R$${valorCompra}`);
+  }
 }
 
 const valorDaCompra = 180;
 verificarDesconto(valorDaCompra);
-
-
 
 // Exercício 2: Verificação de Produto em Estoque
 // Escreva um programa verificarEstoque que verifica se um produto está em estoque com base na quantidade
@@ -29,24 +24,17 @@ verificarDesconto(valorDaCompra);
 // "Produto esgotado" no console.
 // IF / ELSE IF / ELSE:
 
-
 function verificarEstoque(estoqueDisponivel) {
- 
-     if (quantidadeEstoque > 0 ) {
-        console.log("Produto disponivel")
-     }else {
+  if (quantidadeEstoque > 0) {
+    console.log("Produto disponivel");
+  } else {
+    console.log("Produto esgotado");
+  }
 
-        console.log("Produto esgotado")
-     }
+  const quantidade = 100;
 
-     const quantidade = 100;
-
-     verificarEstoque(quantidade);
-
-
+  verificarEstoque(quantidade);
 }
-
-
 
 // Exercício 3: Determinação de Categoria de Cliente
 // Escreva um programa categoriaCliente que determine a categoria de um cliente com base em sua
@@ -54,33 +42,21 @@ function verificarEstoque(estoqueDisponivel) {
 // categorizado como "Cliente Premium". Se for maior ou igual a 50, é categorizado como "Cliente Regular".
 // Caso contrário, é categorizado como "Cliente Comum".
 
+function categoriaCliente() {
+  const pontuacaoFidelidade = Math.floor(Math.random() * 101);
 
+  console.log(` Sua pontuação de fidelidade é: ${pontuacaoFidelidade}`);
 
-function categoriaCliente(){
-   const pontuacaoFidelidade = Math.floor(Math.random() * 101);
-    
-   console.log(` Sua pontuação de fidelidade é: ${pontuacaoFidelidade}`);
-
-
-   if(pontuacaoFidelidade>= 85) {
-     
-   console.log("Cliente Premium")
-
-   }else if(pontuacaoFidelidade >= 50) {
-
-   console.log("Cliente Regular");
-
-   }else{
-
+  if (pontuacaoFidelidade >= 85) {
+    console.log("Cliente Premium");
+  } else if (pontuacaoFidelidade >= 50) {
+    console.log("Cliente Regular");
+  } else {
     console.log("Cliente Comum");
-
-   }
+  }
 }
 
 categoriaCliente();
-
-
-
 
 // Exercício 4: Classificação de Desempenho de Vendas
 // Você está gerenciando uma equipe de vendedores e deseja avaliar o desempenho de cada vendedor com
@@ -94,34 +70,31 @@ categoriaCliente();
 // vendedor com base nas vendas mensais e na meta de vendas estabelecida.
 // OPERADOR TERNÁRIO:
 
-function desepenhoIndividualDeVendas(vendasMensais, metasDeVendas) {
-  const percentualAlcancado = (vendasMensais / metasDeVendas) * 100;
+function desempenhoIndividualDeVendas(vendasMensais, metaVendas) {
+  const percentualAlcancado = (vendasMensais / metaVendas) * 100;
 
   if (percentualAlcancado >= 100) {
-   return "Excelente Desempenho";
-  }else if (percentualAlcancado>= 90 && percentualAlcancado < 100){
-   return "Muito Bom Desempenho";
-  }else if (percentualAlcancado >= 80 && percentualAlcancado < 90) {
-   return "Bom Desempenho";
-  }else if (percentualAlcancado >= 61 && percentualAlcancado <80){
-   return "Desempenho Satisfat´rio";
-  }else {
-   return "Desepenho Insatisfatorio";
-
+    return "Excelente Desempenho";
+  } else if (percentualAlcancado >= 90 && percentualAlcancado < 100) {
+    return "Muito Bom Desempenho";
+  } else if (percentualAlcancado >= 80 && percentualAlcancado < 90) {
+    return "Bom Desempenho";
+  } else if (percentualAlcancado >= 61 && percentualAlcancado < 80) {
+    return "Desempenho Satisfatório";
+  } else {
+    return "Desempenho Insatisfatório";
   }
 }
 
-const vendasMensais = 7500;
-const metaVendas = 1000;
+let vendasMensais = 7500;
+let metaVendas = 10000;
 
-cosnt categoriaDEsempenho = desempenhoIndividualDeVendas{
-
-   vendasMensais,
-   metaVendas
-};
+const categoriaDesempenho = desempenhoIndividualDeVendas(
+  vendasMensais,
+  metaVendas
+);
 
 console.log(`Categoria de Desempenho: ${categoriaDesempenho}`);
-
 
 // Exercício 5: Verificação de Velocidade
 // Crie uma função chamada verificarVelocidade que recebe a velocidade de um veículo como argumento e
@@ -130,10 +103,14 @@ console.log(`Categoria de Desempenho: ${categoriaDesempenho}`);
 // 2 / 2
 // contrário, utilizando o operador ternário.
 
+function verificarVelocidade(velocidade) {
+  const dentroDoLimite = velocidade <= 80 ? true : false;
+  return dentroDoLimite;
+}
 
-
-
-
+const velocidadeVeiculo = 70;
+const dentroDoLimite = verificarVelocidade(velocidadeVeiculo);
+console.log(`O veículo está dentro do limite de velocidade: ${dentroDoLimite}`);
 
 // Exercício 6: Semáforo de Trânsito
 // Crie uma função mensagemSemaforo que recebe uma cor de semáforo como argumento (por exemplo,
@@ -141,25 +118,72 @@ console.log(`Categoria de Desempenho: ${categoriaDesempenho}`);
 // do semáforo. Utilize o operador ternário para determinar a mensagem.
 // SWITCH / CASE:
 
+function mensagemSemaforo(cor) {
+  switch (cor) {
+    case "vermelho":
+      return "Pare!";
+    case "amarelo":
+      return "Atenção! Prepare-se para parar.";
+    case "verde":
+      return "Siga em frente!";
+    default:
+      return "Cor inválida!";
+  }
+}
+const corSemaforo = "verde";
+const mensagem = mensagemSemaforo(corSemaforo);
 
-
-
-
+console.log(`Ação a ser tomada: ${mensagem}`);
 
 // Exercício 7: Prioridade no Trânsito
 // Crie uma função chamada coresDoSemaforo que recebe uma cor de semáforo como argumento (por
 // exemplo, "vermelho", "amarelo" ou "verde") e retorna uma mensagem indicando se é seguro passar ou se é
 // necessário parar.
 
+function coresDoSemaforo(cor) {
+  switch (cor) {
+    case "vermelho":
+      return "É necessário parar.";
+    case "amarelo":
+      return "Atenção! Prepare-se para parar.";
+    case "verde":
+      return "É seguro passar.";
+    default:
+      return "Cor inválida!";
+  }
+}
 
-
-
-
-
-
+const corSemaforoPrioridade = "amarelo";
+const mensagemPrioridade = coresDoSemaforo(corSemaforoPrioridade);
+console.log(`Prioridade no Trânsito: ${mensagemPrioridade}`);
 
 // Exercício 8: Verificação de Placa de Veículo
 // Crie uma função verificarPlaca que recebe o último dígito da placa de um veículo como argumento (um
 // número de 0 a 9) e retorna uma mensagem indicando o dia de rodízio em São Paulo, com base no último
 // dígito da placa.
 
+function verificarPlaca(ultimoDigito) {
+  switch (ultimoDigito) {
+    case 1:
+    case 2:
+      return "Rodízio: Segunda-feira";
+    case 3:
+    case 4:
+      return "Rodízio: Terça-feira";
+    case 5:
+    case 6:
+      return "Rodízio: Quarta-feira";
+    case 7:
+    case 8:
+      return "Rodízio: Quinta-feira";
+    case 9:
+    case 0:
+      return "Rodízio: Sexta-feira";
+    default:
+      return "Dígito inválido!";
+  }
+}
+
+const ultimoDigitoPlaca = 3;
+const mensagemRodizio = verificarPlaca(ultimoDigitoPlaca);
+console.log(`Dia de Rodízio: ${mensagemRodizio}`);
