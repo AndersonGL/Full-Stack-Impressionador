@@ -53,7 +53,7 @@ dia + 1
 );
 
 // Retorna a soma do valor do dia atual com o valor das vendas dos dias
-seguintes.
+
 return valorVendaDiaAtual + valorVendaProximoDia;
 }
 const vendasDiarias = [
@@ -72,16 +72,14 @@ console.log(
 
 
 
-
-
-
-
 // Exercício 3: Listagem de Itens do Cardápio
 // Você é o gerente de uma lanchonete e deseja listar os itens do cardápio para exibição. Os itens do cardápio
 // são armazenados em um objeto onde as chaves são os nomes dos itens e os valores são os preços. Crie um
 // programa que use um loop for...in para listar todos os itens do cardápio juntamente com seus preços.
 
+
 const cardapio = {
+
 "Hambúrguer": 10,
 "Batata Frita": 5,
 "Refrigerante": 2,
@@ -92,7 +90,13 @@ for (const item in cardapio) {
 console.log(`${item}: R$${cardapio[item]}`);
 }
 }
+
 listarItensDoCardapio(cardapio);
+
+
+
+
+
 
 
 // Exercício 4: Calcular o Total da Conta
@@ -132,6 +136,8 @@ console.log(`Total da conta: R$${totalConta}`);
 // um loop for...of para listar todos os itens do cardápio.
 
 
+
+
 function listarItensDoCardapio(cardapio) {
 for (const item of cardapio) {
 console.log(item);
@@ -154,6 +160,8 @@ listarItensDoCardapio(cardapioLanchonete);
 // cliente. Os itens do pedido estão armazenados em um array de objetos, onde cada objeto tem o nome do
 // item e a quantidade. Crie um programa que use um loop for...of para percorrer o pedido do cliente e calcule o
 // valor total da conta
+
+
 
 
 const cardapio = {
