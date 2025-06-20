@@ -29,7 +29,7 @@ console.log(`O faturamento total da semana é R$${faturamentoTotal}.`);
 // juntamente com seus preços. Utilize um loop for para percorrer o cardápio e exibi-lo.
 // Estrutura de Repetição - WHILE:
 
-const cardapio = [
+const cardapioEx2 = [
   { nome: "Hambúrguer", preco: 10 },
   { nome: "Batata Frita", preco: 5 },
   { nome: "Refrigerante", preco: 3 },
@@ -42,60 +42,54 @@ function exibirCardapio(cardapio) {
     console.log(`${cardapio[i].nome}: R$${cardapio[i].preco}`);
   }
 }
-exibirCardapio(cardapio);
+exibirCardapio(cardapioEx2);
 
 // Exercício 3: Contagem de Dinheiro no Caixa
 // Você é o caixa de uma lanchonete e precisa contar o dinheiro recebido até que a última venda do dia seja
 // feita. Crie um programa que simule a contagem do dinheiro recebido a cada venda até o fechamento da
 // lanchonete.
 
-
-
-const cardapio = {
-"Hambúrguer": 10,
-"Batata Frita": 5,
-"Refrigerante": 2,
-"Milkshake": 7,
+const cardapioEx3 = {
+  Hambúrguer: 10,
+  "Batata Frita": 5,
+  Refrigerante: 2,
+  Milkshake: 7,
 };
 function listarItensDoCardapio(cardapio) {
-for (const item in cardapio) {
-console.log(`${item}: R$${cardapio[item]}`);
+  for (const item in cardapio) {
+    console.log(`${item}: R$${cardapio[item]}`);
+  }
 }
-}
-listarItensDoCardapio(cardapio);
-listarItensDoCardapio(cardapio);
-
+listarItensDoCardapio(cardapioEx3);
+listarItensDoCardapio(cardapioEx3);
 
 // Exercício 4: Entrega de Pedidos Pendentes
 // Você é o entregador de uma lanchonete e precisa entregar pedidos até que não haja mais pedidos
 // pendentes. Crie um programa que simule a entrega de pedidos até que não haja mais pedidos na lista.
 // Estrutura de Repetição - DO...WHILE:
 
-
-const cardapio = {
- "Hambúrguer": 10,
- "Batata Frita": 5,
- "Refrigerante": 2,
- "Milkshake": 7,
+const cardapioEx4 = {
+  Hambúrguer: 10,
+  "Batata Frita": 5,
+  Refrigerante: 2,
+  Milkshake: 7,
 };
-const pedidoCliente = {
- "Hambúrguer": 2,
- "Batata Frita": 1,
- "Refrigerante": 3,
+const pedidoClienteEx4 = {
+  Hambúrguer: 2,
+  "Batata Frita": 1,
+  Refrigerante: 3,
 };
-function calcularTotalDaConta(cardapio, pedidoCliente) {
- let totalConta = 0;
- for (const item in pedidoCliente) {
- if (item in cardapio) {
- totalConta += cardapio[item] * pedidoCliente[item];
- }
- }
- return totalConta;
+function calcularTotalDaContaEx4(cardapio, pedidoCliente) {
+  let totalConta = 0;
+  for (const item in pedidoCliente) {
+    if (item in cardapio) {
+      totalConta += cardapio[item] * pedidoCliente[item];
+    }
+  }
+  return totalConta;
 }
-const totalConta = calcularTotalDaConta(cardapio, pedidoCliente);
-console.log(`Total da conta: R$${totalConta}`);
-
-
+const totalContaEx4 = calcularTotalDaContaEx4(cardapioEx4, pedidoClienteEx4);
+console.log(`Total da conta: R$${totalContaEx4}`);
 
 // Exercício 5: Adivinhe o Número Secreto para Desconto
 // Você deseja criar um programa que permite aos clientes da sua lanchonete adivinharem um número secreto
@@ -103,55 +97,46 @@ console.log(`Total da conta: R$${totalConta}`);
 // adivinharem o número secreto. Crie um programa que use a estrutura do...while para permitir que os clientes
 // tentem adivinhar o número secreto.
 
-
-
-
-function listarItensDoCardapio(cardapio) {
-for (const item of cardapio) {
-console.log(item);
-}
+function listarItensDoCardapioArray(cardapio) {
+  for (const item of cardapio) {
+    console.log(item);
+  }
 }
 const cardapioLanchonete = [
-"Hambúrguer",
-"Batata Frita",
-"Refrigerante",
-"Milkshake",
-"Hot Dog",
-"Cachorro-Quente",
-"Pizza",
+  "Hambúrguer",
+  "Batata Frita",
+  "Refrigerante",
+  "Milkshake",
+  "Hot Dog",
+  "Cachorro-Quente",
+  "Pizza",
 ];
-listarItensDoCardapio(cardapioLanchonete);
-
-
-
+listarItensDoCardapioArray(cardapioLanchonete);
 
 // Exercício 6: Gerenciamento de Estoque de Itens em Falta
 // Você é o gerente de uma lanchonete e está verificando o estoque de itens em falta. Crie um programa que
 // permita que você insira os itens que estão em falta e os adicione ao estoque até que você decida encerrar o
 // processo.
 
-
-const cardapio = {
-"Hambúrguer": 10,
-"Batata Frita": 5,
-"Refrigerante": 2,
-"Milkshake": 7,
+const cardapioEx6 = {
+  Hambúrguer: 10,
+  "Batata Frita": 5,
+  Refrigerante: 2,
+  Milkshake: 7,
 };
-const pedidoCliente = [
-{ nome: "Hambúrguer", quantidade: 2 },
-{ nome: "Batata Frita", quantidade: 1 },
-{ nome: "Refrigerante", quantidade: 3 },
+const pedidoClienteEx6 = [
+  { nome: "Hambúrguer", quantidade: 2 },
+  { nome: "Batata Frita", quantidade: 1 },
+  { nome: "Refrigerante", quantidade: 3 },
 ];
-function calcularTotalDaConta(cardapio, pedidoCliente) {
-let totalConta = 0;
-for (const pedido of pedidoCliente) {
-if (pedido.nome in cardapio) {
-totalConta += cardapio[pedido.nome] * pedido.quantidade;
+function calcularTotalDaContaEx6(cardapio, pedidoCliente) {
+  let totalConta = 0;
+  for (const pedido of pedidoCliente) {
+    if (pedido.nome in cardapio) {
+      totalConta += cardapio[pedido.nome] * pedido.quantidade;
+    }
+  }
+  return totalConta;
 }
-}
-exercicios_gabarito.md 2023-09-26
-5 / 5
-return totalConta;
-}
-const totalConta = calcularTotalDaConta(cardapio, pedidoCliente);
-console.log(`Total da conta: R$${totalConta}`);
+const totalContaEx6 = calcularTotalDaContaEx6(cardapioEx6, pedidoClienteEx6);
+console.log(`Total da conta: R$${totalContaEx6}`);
