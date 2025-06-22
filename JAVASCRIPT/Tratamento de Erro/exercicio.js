@@ -84,7 +84,8 @@ tratarErroPropriedadeInexistente();
 
 function tratarErroConversaoTipo() {
   try {
-    const numero = "Hashtag";
+    const numero = "Hashtag"; // String inválida para conversão
+    // Tentando converter a string para um número inteiro
     const resultado = parseInt(numero);
     if (isNaN(resultado)) {
       throw new Error("Erro: Não foi possível converter a string em número.");
