@@ -24,14 +24,16 @@ function getIngredients(meal) {
   const ingredients = [];
 
   for (let i = 1; i <= 20; i++) {
-    if (meal[`strIngredient${i}`]) {
+    const ingredient = meal[`strIngredient${i}`];
+    const measure = meal[`strMeasure${i}`];
+    if (ingredient && ingredient.trim() !== "") {
       ingredients.push(`
     <li>
-      ${meal[`strIngredient${i}`]} - ${meal[`strMeasure${i}`]}
+      ${ingredient} - ${measure ? measure : ""}
     </li>
   `);
     } else {
-      break;
+      continue;
     }
   }
 
