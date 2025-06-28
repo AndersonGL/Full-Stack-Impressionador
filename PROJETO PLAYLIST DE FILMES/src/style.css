@@ -17,6 +17,7 @@ body {
   min-height: 100dvh;
 }
 button {
+  all: unset;
   cursor: pointer;
 }
 header {
@@ -46,7 +47,6 @@ header > h2 > i {
   display: flex;
   align-items: center;
 }
-
 .movie-year-wrapper > input {
   max-width: 5rem;
 }
@@ -65,7 +65,7 @@ header > h2 > i {
   font-weight: bold;
 }
 #search-button {
-  all: unset;
+  width: 5%;
   padding: 0.3rem;
   border: 2px solid var(--lightest-color);
   border-radius: 10px;
@@ -74,11 +74,10 @@ header > h2 > i {
 #search-button:hover {
   background-color: var(--light-primary);
 }
-
 main {
   text-align: center;
   padding: 2rem 0;
   background-color: var(--lightest-color);
-  color: var(--primary-color);
+  color: var(--light-primary);
   flex-grow: 1;
 }
